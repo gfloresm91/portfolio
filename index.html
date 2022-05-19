@@ -1,12 +1,263 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> 
 <head>
-    <meta charset="UTF-8">
+    <title>Portfolio - Gabriel Flores</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello 1</title>
-</head>
+    <meta name="description" content="Responsive Portfolio Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/flickity/flickity.min.css">
+    
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+
+	<!-- Custom CSS -->  
+	<link id="theme-style" rel="stylesheet" href="assets/css/custom.css">
+
+</head> 
+
 <body>
-    <h1>Hello world! 😊 from site 1</h1>
+    
+    <header class="header">
+	    
+        <div class="top-bar theme-bg-primary-darken">
+            
+            <div class="container-fluid">
+            
+				<nav class="navbar navbar-expand-lg navbar-dark position-relative">
+					
+					
+					<ul class="social-list list-inline mb-0">
+			            <li class="list-inline-item"><a class="text-white" href="https://twitter.com/gfloresm91"><i class="fab fa-twitter fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a class="text-white" href="https://www.linkedin.com/in/gabrielfloresmonsalve"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a class="text-white" href="https://github.com/gfloresm91"><i class="fab fa-github-alt fa-fw"></i></a></li>
+		            </ul><!--//social-list-->
+					
+	
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<div class="collapse navbar-collapse text-uppercase" id="navigation">
+						<ul class="navbar-nav ms-lg-auto">
+							<li class="nav-item me-lg-3">
+							    <a class="nav-link active" href="index.html">Acerca <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item me-lg-3">
+							   <a class="nav-link" href="projects.html">Proyectos</a>
+							</li>
+							<li class="nav-item me-lg-3">
+							    <a class="nav-link" href="resume.html">CV</a>
+							</li>
+						</ul>
+						<span id="slide-line"></span>
+					</div>
+
+					
+				</nav>
+            
+            </div><!--//container-->
+            
+        </div><!--//top-bar-->
+        
+        <div class="header-intro theme-bg-primary text-white py-5">
+	        <div class="container">
+		        <div class="profile-teaser row gx-lg-5 justify-content-center">
+			        <div class="col-12 col-md-auto text-center text-md-start">
+				        <img class="profile-image mb-3 mb-lg-0 ms-md-0 rounded mx-auto" src="assets/images/profile.png" alt="">
+			        </div>
+					<div class="col text-center text-md-start">
+						<div class="lead">Hola, mi nombre es</div>
+						<h2 class="mt-0 display-4 font-weight-bold">Gabriel Flores</h2>
+						<div class="bio mb-3">Soy un desarrollador fullstack especializado en aplicativos webs. A mediano plazo me gustaría seguir aprendiendo diferentes tecnologías para ser un referente tecnológico y así apoyar a mi equipo cuando lo necesite. Puede seguir conociendome en mi <a class="link-on-bg text-link" href="resume.html">CV online</a>.
+						</div><!--//bio-->
+					
+					</div><!--//media-body-->
+				</div><!--//profile-teaser-->
+		        
+	        </div><!--//container-->
+        </div><!--//header-intro-->
+        
+    </header><!--//header-->
+        
+    <section class="skills-section section py-5">
+        <div class="container">
+	        <h3 class="section-title font-weight-bold text-center mb-3">Skills</h3>
+	        <div class="section-intro mx-auto text-center mb-5 text-secondary">Tengo más de 5 años de experiencia construyendo aplicaciones webs para diferentes empresas de la región. A continuación puede dar un vistazo rápido a mis habilidades técnicas y herramientas que he utilizado. ¿Quieres conocer más detalles de mi experiencia?, favor revisar mi <a class="text-link" href="resume.html">CV online</a>.</div>
+	        
+	        <div class="skills-blocks mx-auto pt-5">
+		        <div class="row">
+			        <div class="skills-block col-12 col-lg-4 mb-5 mb-3 mb-lg-0">
+				        <div class="skills-block-inner bg-white shadow-sm py-4 px-5 position-relative">
+					        <h4 class="skills-cat text-center mb-3 mt-5">Frontend</h4>
+					        <div class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center">
+					            <img class="skills-icon" src="assets/images/frontend-icon.svg">
+					        </div>
+					        <ul class="skills-list list-unstyled text-secondary">
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>Typescript</li>
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>Javascript</li>
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>Angular</li>							        
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>HTML/CSS</li>
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>Bootstrap</li>
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>Jquery</li>
+					        </ul>
+				        </div><!--//skills-block-inner-->
+			        </div><!--//skills-block-->
+			        
+			        <div class="skills-block col-12 col-lg-4 mb-5 mb-3 mb-lg-0">
+				        <div class="skills-block-inner bg-white shadow-sm py-4 px-5 position-relative">
+					        <h4 class="skills-cat text-center mb-3 mt-5">Backend</h4>
+					        <div class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center">
+					            <img class="skills-icon" src="assets/images/backend-icon.svg">
+					        </div>
+					        <ul class="skills-list list-unstyled text-secondary">
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>PHP</li>
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>Docker</li>
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>Laravel</li>
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>Laravel packages</li>
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>Codeigniter</li>
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>MySql</li>
+					        </ul>
+				        </div><!--//skills-block-inner-->
+			        </div><!--//skills-block-->
+			        
+			        <div class="skills-block col-12 col-lg-4">
+				        <div class="skills-block-inner bg-white shadow-sm py-4 px-5 position-relative">
+					        <h4 class="skills-cat text-center mb-3 mt-5">Otros</h4>
+					        <div class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center">
+					            <img class="skills-icon" src="assets/images/other-skills-icon.svg">
+					        </div>
+					        <ul class="skills-list list-unstyled text-secondary">
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>Git/GitHub/GitLab/BitBucket</li>
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>API Rest</li>
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>DigitalOcean</li>
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>Google APIs</li>
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>SSH</li>
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>SQLMap</li>
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>Algolia search</li>
+						        <li class="mb-2"><i class="fas fa-check me-2 text-primary"></i>GNU/Linux</li>
+					        </ul>
+				        </div><!--//skills-block-inner-->
+			        </div><!--//skills-block-->
+			        
+		        </div><!--//row-->
+	        </div>
+        </div><!--//container-->
+    </section><!--//skills-section-->
+    
+    <section class="section-proof section bg-white py-5">
+        <div class="container">
+	        <h3 class="section-title font-weight-bold text-center mb-5">Clientes con los que he trabajado</h3>
+	        <div class="row mb-5 d-flex justify-content-center">
+		        <div class="px-3 col-6 col-md-4 col-lg-2 me-0 px-md-5 px-lg-4"><a class="logo-link" href="#"><img class="img-fluid svg-ie-fix" src="assets/images/logos/genesys-logo.png"></a></div>
+		        <div class="px-3 col-6 col-md-4 col-lg-2 me-0 px-md-5 px-lg-4"><a class="logo-link" href="#"><img class="img-fluid svg-ie-fix fix-logo-height" src="assets/images/logos/impact-logo.jpg"></a></div>
+		        <div class="px-3 col-6 col-md-4 col-lg-2 me-0 px-md-5 px-lg-4"><a class="logo-link" href="#"><img class="img-fluid svg-ie-fix" src="assets/images/logos/valoralabs-logo.jpg"></a></div>
+	        </div>
+	        
+	        
+        </div>
+        
+        <div class="container-fluid">
+        
+	        <div class="testimonials">
+			        
+		        <div class="testimonial-item">				        
+			        <div class="position-relative p-5 shadow">
+				        <blockquote class="blockquote ps-4">
+						  <p class="mb-4">Excelente profesional comprometido, eficaz y aprueba de retos. Realizamos la primera experiencia de trabajo 100% remoto con él y fue todo un éxito en ValoraLabs. Considero que Gabriel cumple con creces sus metas y objetivos tanto profesionales como personales. Lo que más me gustaba de él era su capacidad de analizar las cosas y aportar de manera pro-activa con críticas constructivas en nuestra retrospectivas de SPRINT. No duden en requerir sus servicios, no se arrepentirán.</p>
+						  <i class="quote-icon fas fa-quote-left fa-lg position-absolute text-primary"></i>
+						  <footer class="blockquote-footer presudo-hidden mt-4">
+							   <div class="row client-profile">
+								   <div class="col-12 col-md-auto">
+								       <img src="assets/images/clients/jonathan - valoralabs.jpg" alt="">
+								   </div>
+								   <div class="col">
+								       <cite title="Source" class="quote-source d-inline-block font-style-normal pt-3">
+								           <span class="d-block">Jonathan Ramírez Medina, ValoraLabs</span>
+								           <span class="d-block">Coordinador general</span>
+								           <span class="d-block position-absolute source-link"><i class="fab fa-linkedin fa-2x me-1" data-fa-transform="down-3"></i> <a class="text-secondary text-link" href="https://www.linkedin.com/in/gabrielfloresmonsalve" target="_blank">Ver en Linkedin <i class="fas fa-external-link-alt ms-1" data-fa-transform="up-1"></i></a></span>
+								       </cite>
+								   </div>
+							   </div><!--//row-->
+						  </footer>
+						</blockquote>
+			        </div>
+		        </div><!--//testimonial-item-->
+		        
+		        <div class="testimonial-item">				        
+			        <div class="position-relative p-5 shadow">
+				        <blockquote class="blockquote ps-4">
+						  <p class="mb-4">Gabriel es un profesional que ha demostrado mucha disciplina, además de tener una gran capacidad para resolver problemas y entregar soluciones. Tiene motivación y sobre todo es capaz de descubrir, investigar y aportar para el buen curso de los servicios y proyectos en donde ha sido asignado. Es un profesional que aporta y trabaja bien en equipo.</p>
+						  <i class="quote-icon fas fa-quote-left position-absolute text-primary"></i>
+						  <footer class="blockquote-footer presudo-hidden mt-4">
+							   <div class="row client-profile">
+								   <div class="col-12 col-md-auto">
+								       <img src="assets/images/clients/jose - genesys.jpg" alt="">
+								   </div>
+								   <div class="col">
+								       <cite title="Source" class="quote-source d-inline-block font-style-normal pt-3">
+								           <span class="d-block">Jose Luis Puchi</span>
+								           <span class="d-block">Gerente, Genesys</span>
+								           <span class="d-block position-absolute source-link"><i class="fab fa-linkedin fa-2x me-1" data-fa-transform="down-3"></i> <a class="text-secondary text-link" href="https://www.linkedin.com/in/gabrielfloresmonsalve" target="_blank">Ver en Linkedin <i class="fas fa-external-link-alt ms-1" data-fa-transform="up-1"></i></a></span>
+								       </cite>
+								   </div>
+							   </div><!--//row-->
+						  </footer>
+						  
+						</blockquote>
+			        </div>
+		        </div><!--//testimonial-item-->
+		        
+	        </div><!--//container-fluid-->
+	        
+	        
+        </div><!--//testimonials-->
+        
+        
+    </section>
+    
+	<section class="section-cta py-5 bg-primary text-white">
+		<div class="container">
+			<div class="text-center">
+			    <img class="profile-small d-inline-block mx-auto rounded-circle mb-2" src="assets/images/profile.png" alt="">
+		    </div>
+		    <h3 class="section-title font-weight-bold text-center mb-2">¿Se encuentra buscando talentos?</h3>
+		    <div class="section-intro mx-auto text-center mb-3">
+			    Si busca un desarrollador fullstack para unirse a su equipo de trabajo favor contactarme al email <a class="link-on-bg text-link" href="mailto: gabrielfloresmonsalve@gmail.com">gabrielfloresmonsalve@gmail.com</a>.
+		    </div>
+		</div><!--//container-->
+	</section>
+    
+    <footer class="footer text-light text-center py-2">
+	    <small class="copyright">Template Copyright &copy; <a class="text-light text-link" href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
+    </footer>
+    
+       
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    <script type="text/javascript" src="assets/plugins/vanilla-back-to-top.min.js"></script>    
+    
+    <!-- Page Specific JS -->
+    <script type="text/javascript" src="assets/plugins/flickity/flickity.pkgd.min.js"></script> 
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/flickity-custom.js"></script> 
+
 </body>
-</html>
+</html> 
+
