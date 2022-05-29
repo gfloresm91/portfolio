@@ -1,0 +1,78 @@
+<section class="section-proof section bg-white py-5">
+  <div class="container">
+    <h3 class="section-title font-weight-bold text-center mb-5">
+      Clientes con los que he trabajado
+    </h3>
+    <div class="row mb-5 d-flex justify-content-center">
+      <div
+        class="px-3 col-6 col-md-4 col-lg-2 me-0 px-md-5 px-lg-4"
+        *ngFor="let client of clients"
+      >
+        <a class="logo-link" href="#"
+          ><img
+            class="img-fluid svg-ie-fix"
+            [src]="client.logo"
+            [ngClass]="client.fixLogo ? 'fix-logo-height' : ''"
+        /></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="testimonials">
+      <div
+        class="testimonial-item"
+        *ngFor="let recomendation of recomendations"
+      >
+        <div class="position-relative p-5 shadow">
+          <blockquote class="blockquote ps-4">
+            <p class="mb-4">
+              {{ recomendation.message }}
+            </p>
+            <i
+              class="quote-icon fas fa-quote-left fa-lg position-absolute text-primary"
+            ></i>
+            <footer
+              class="blockquote-footer presudo-hidden mt-4"
+              *ngFor="let colaborator of recomendation.colaboratorData"
+            >
+              <div class="row client-profile">
+                <div class="col-12 col-md-auto">
+                  <img [src]="colaborator.image" alt="" />
+                </div>
+                <div class="col">
+                  <cite
+                    title="Source"
+                    class="quote-source d-inline-block font-style-normal pt-3"
+                  >
+                    <span class="d-block">{{ colaborator.name }}</span>
+                    <span class="d-block">{{ colaborator.job }}</span>
+                    <span class="d-block position-absolute source-link"
+                      ><i
+                        class="fab fa-linkedin fa-2x me-1"
+                        data-fa-transform="down-3"
+                      ></i>
+                      <a
+                        class="text-secondary text-link"
+                        [href]="recomendation.link"
+                        target="_blank"
+                        >Ver en Linkedin
+                        <i
+                          class="fas fa-external-link-alt ms-1"
+                          data-fa-transform="up-1"
+                        ></i></a
+                    ></span>
+                  </cite>
+                </div>
+              </div>
+              <!--//row-->
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+      <!--//testimonial-item-->
+    </div>
+    <!--//container-fluid-->
+  </div>
+  <!--//testimonials-->
+</section>

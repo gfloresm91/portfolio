@@ -1,0 +1,58 @@
+<header class="header">
+  <div class="top-bar theme-bg-primary-darken">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark position-relative">
+        <ul class="social-list list-inline mb-0">
+          <li class="list-inline-item">
+            <a class="text-white" href="https://twitter.com/gfloresm91"
+              ><i class="fab fa-twitter fa-fw"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              class="text-white"
+              href="https://www.linkedin.com/in/gabrielfloresmonsalve"
+              ><i class="fab fa-linkedin-in fa-fw"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="text-white" href="https://github.com/gfloresm91"
+              ><i class="fab fa-github-alt fa-fw"></i
+            ></a>
+          </li>
+        </ul>
+        <!--//social-list-->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-uppercase" id="navigation">
+          <ul class="navbar-nav ms-lg-auto">
+            <li class="nav-item me-lg-3" *ngFor="let item of routes" #linkRefs>
+              <a
+                class="nav-link"
+                [routerLink]="[item.route]"
+                routerLinkActive="active"
+              >
+                {{ item.name }} <span class="sr-only">(current)</span></a
+              >
+            </li>
+          </ul>
+          <span id="slide-line"></span>
+        </div>
+      </nav>
+    </div>
+    <!--//container-->
+  </div>
+  <!--//top-bar-->
+</header>
+<!--//header-->

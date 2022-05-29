@@ -1,0 +1,41 @@
+<section class="skills-section section py-5">
+  <div class="container" *ngFor="let skill of skills">
+    <h3 class="section-title font-weight-bold text-center mb-3">Skills</h3>
+    <div
+      class="section-intro mx-auto text-center mb-5 text-secondary"
+      [innerHtml]="skill.description"
+    ></div>
+
+    <div class="skills-blocks mx-auto pt-5">
+      <div class="row">
+        <div
+          class="skills-block col-12 col-lg-4 mb-5 mb-3 mb-lg-0"
+          *ngFor="let skillDetail of skill.skillsDetails"
+        >
+          <div
+            class="skills-block-inner bg-white shadow-sm py-4 px-5 position-relative"
+          >
+            <h4 class="skills-cat text-center mb-3 mt-5">
+              {{ skillDetail.title }}
+            </h4>
+            <div
+              class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center"
+            >
+              <img class="skills-icon" [src]="skillDetail.icon" />
+            </div>
+            <ul class="skills-list list-unstyled text-secondary">
+              <li class="mb-2" *ngFor="let item of skillDetail.items">
+                <i class="fas fa-check me-2 text-primary"></i>{{ item.item }}
+              </li>
+            </ul>
+          </div>
+          <!--//skills-block-inner-->
+        </div>
+        <!--//skills-block-->
+      </div>
+      <!--//row-->
+    </div>
+  </div>
+  <!--//container-->
+</section>
+<!--//skills-section-->

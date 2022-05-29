@@ -1,0 +1,30 @@
+<div class="header">
+  <div class="header-intro theme-bg-primary text-white py-5">
+    <div class="container">
+      <div
+        class="profile-teaser row gx-lg-5 justify-content-center"
+        *ngFor="let user of userInfo"
+      >
+        <div class="col-12 col-md-auto text-center text-md-start">
+          <img
+            class="profile-image mb-3 mb-lg-0 ms-md-0 rounded mx-auto"
+            [src]="user.profileImage"
+            alt="Personal photo"
+          />
+        </div>
+        <div class="col text-center text-md-start">
+          <div class="lead">Hola, mi nombre es</div>
+          <h2 class="mt-0 display-4 font-weight-bold">
+            {{ user.userName }}
+          </h2>
+          <div class="bio mb-3" [innerHTML]="user.userDescription"></div>
+          <!--//bio-->
+        </div>
+        <!--//media-body-->
+      </div>
+      <!--//profile-teaser-->
+    </div>
+    <!--//container-->
+  </div>
+  <!--//header-intro-->
+</div>
